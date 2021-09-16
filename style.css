@@ -1,0 +1,6 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
