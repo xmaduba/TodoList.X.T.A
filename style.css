@@ -1,6 +1,51 @@
-/* Include the padding and border in an element's total width and height */
-* {
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-  }
-  
+}
+
+body{
+
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    background-color: lightgreen;
+    border: 1px solid red;
+    width: 600px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+   
+}
+
+ul{
+    border: 1px solid red;
+    list-style: none;
+    width: 600px;
+    height: 50px;
+    background-color: white;
+}
+
+.input{
+    margin-top: 3rem;
+    margin-right: 1rem;
+}
+
+li{
+    padding-left: 0.2rem;
+    padding-top: 0.5rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
