@@ -15,7 +15,7 @@ body{
 
 header{
     background-color: lightgreen;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 600px;
     height: 200px;
     display: flex;
@@ -26,11 +26,10 @@ header{
 }
 
 ul{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     list-style: none;
     width: 600px;
-    height: 50px;
-    background-color: white;
+    height: auto;
 }
 
 .input{
@@ -41,7 +40,13 @@ ul{
 li{
     padding-left: 0.2rem;
     padding-top: 0.5rem;
-    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(255, 255, 255);
+    /*border: 1px solid red;*/
+}
+
+li:nth-child(even) {
+    background-color: lightgrey;
 }
 
 
