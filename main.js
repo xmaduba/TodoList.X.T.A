@@ -5,7 +5,7 @@ function addTask() {
     const template = 
         `<li class="taskListItem">${document.querySelector(".input").value}
             <div class="taskButtons">
-                <button id=" class="taskButton deleteButton"" type="submit">Delete
+                <button id="deleteButton" class="taskButton deleteButton"" type="submit">Delete
                 </button>
                 <button id="editButton" class="taskButton" type="submit">Edit
                 </button>
@@ -19,18 +19,6 @@ function addTask() {
     }
 }
 
-// const applyEventListeners = () => {
-//     deleteButton.addEventListener('click', () => {
-//         alert("delete");
-//     });
-//     editButton.addEventListener('click', () => {
-//         alert("edit");
-//     });
-//     checkButton.addEventListener('click', () => {
-//         alert("check");
-//     });
-// }
-
 
 // element.insertAdjacentHTML(position, text);
 const taskButton = document.querySelector('.addTaskButton');
@@ -38,13 +26,14 @@ const deleteButton = document.querySelector('#deleteButton');
 const editButton = document.querySelector('#editButton');
 const doneButton = document.querySelector('#doneButton');
 
-// document.querySelector(ul).addEventListener("click", () => {
-//     if(e.target.classList.contains('deleteButton')) {
-//         alert("delete");
-//     })
-//     alert("hjbhjk");
-// }
-
-taskButton.addEventListener('click', () => {
-    addTask(document.querySelector(".input").value);
+document.addEventListener('click', (e) => {
+    if(e.target.id === 'taskButton'){
+        taskButton.addEventListener('click', () => {
+            addTask(document.querySelector(".input").value);
+        }   
+    }
 });
+
+// taskButton.addEventListener('click', () => {
+//     addTask(document.querySelector(".input").value);
+// });
